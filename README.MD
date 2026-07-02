@@ -92,3 +92,6 @@ receiving and completing the message.
 Gilberto Andreatta, Senior Software Engineer
 Focused on building secure, scalable, and high-performance distributed
 systems for the global market.
+
+## 9. License
+This project is licensed under the MIT License, which is a permissive license that allows for reuse and modification, making it ideal for portfolio projects. This choice reflects a commitment to open-source collaboration.
