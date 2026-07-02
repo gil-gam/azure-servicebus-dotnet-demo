@@ -1,5 +1,7 @@
 # GitHub Actions workflow for building and validating a .NET 10 application.
 # This workflow runs on every push or pull request targeting the main branch.
+# Actions are pinned to their latest v4 major versions, which are compatible
+# with the Node 24 runtime transition on GitHub-hosted runners.
 name: .NET CI
 
 on:
@@ -22,12 +24,17 @@ jobs:
 
     steps:
       # Step 1: Checkout the repository code.
+      # Uses actions/checkout@v4, the latest stable major version compatible
+      # with Node 24-based runners. No further action is required for the
+      # Node.js 20 deprecation warning; v4 tracks the latest compatible release.
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Full history is useful for tooling and diagnostics.
 
       # Step 2: Install the .NET SDK (version 10.0.x).
+      # Uses actions/setup-dotnet@v4, the latest stable major version compatible
+      # with Node 24-based runners.
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v4
         with:
