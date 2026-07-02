@@ -1,0 +1,111 @@
+## .NET / Visual Studio .gitignore for projects with Azure Service Bus secrets
+
+## -------------------------------
+## Sensitive application configuration
+## Prevent Azure Service Bus connection strings from being pushed to GitHub
+## -------------------------------
+appsettings.json
+appsettings.Development.json
+appsettings.*.json
+!appsettings.example.json
+*.secrets.json
+secrets.json
+
+## -------------------------------
+## User secrets
+## -------------------------------
+*.secrets.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+## -------------------------------
+## Build artifacts and intermediate output
+## -------------------------------
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rtifacts/
+build/
+bld/
+*.log
+*.tlog
+*.binlog
+*.pidb
+*.svclog
+*.scc
+
+## -------------------------------
+## NuGet
+## -------------------------------
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+.nuget/
+packages/
+project.lock.json
+
+## -------------------------------
+## Visual Studio / IDE settings
+## -------------------------------
+.vs/
+.vscode/
+.idea/
+*.sln.ide/
+*.vshistory/
+*.vspscc
+*.vssscc
+
+## -------------------------------
+## Test results and coverage
+## -------------------------------
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+TestResults/
+*.coverage
+*.coveragexml
+coverage/
+coverage*.xml
+coverage*.json
+
+## -------------------------------
+## Publish and deployment output
+## -------------------------------
+*.publishsettings
+PublishScripts/
+publish/
+published/
+*.pubxml.user
+
+## -------------------------------
+## Entity Framework / migrations local state
+## -------------------------------
+*.dbmdl
+*.dbproj.schemaview
+*.ldf
+*.mdf
+*.jfm
+
+## -------------------------------
+## OS-generated files
+## -------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+## -------------------------------
+## Logs and temporary files
+## -------------------------------
+*.tmp
+*.temp
+*.cache
+*.swp
+*~
