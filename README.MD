@@ -1,6 +1,5 @@
 # AZURE SERVICE BUS DEMO WITH .NET 10.0
 ## Asynchronous Messaging and Decoupled Architecture Implementation
-02 de julho de 2026
 
 ## 1. Project Overview
 This repository contains a high-performance .NET 10.0 Console Application designed to
@@ -56,12 +55,15 @@ An active Azure Subscription.
 An Azure Service Bus Namespace with a configured Queue (e.g., orders-queue ).
 
 ## 6. Setup & Configuration
-1. Clone the repository:
+
+**1. Clone the repository:**
 git clone https://github.com/gil-gam/azure-servicebus-dotnet-demo.git
 cd azure-servicebus-dotnet-demo
-2. Configure Settings:
+
+**2. Configure Settings:**
 Locate the appsettings.example.json file and create a copy named
 appsettings.json . Fill in your Azure credentials:
+
 
 ``` json
 {
@@ -71,7 +73,7 @@ appsettings.json . Fill in your Azure credentials:
 }
 }
 ``` 
-Warning: Never commit your appsettings.json file to a public repository. Ensure it is
+**Warning:** Never commit your appsettings.json file to a public repository. Ensure it is
 listed in your .gitignore .
 
 ## 7. How to Run
@@ -83,6 +85,5 @@ receiving and completing the message.
 
 ## 8. Author Information
 Gilberto Andreatta, Senior Software Engineer
-Specialized in Backend Development with .NET/C#, Software Architecture, and
-CyberSecurity. Focused on building secure, scalable, and high-performance distributed
+Focused on building secure, scalable, and high-performance distributed
 systems for the global market.
