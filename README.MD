@@ -57,18 +57,23 @@ An Azure Service Bus Namespace with a configured Queue (e.g., orders-queue ).
 ## 6. Setup & Configuration
 
 **1. Clone the repository:**
+
 git clone https://github.com/gil-gam/azure-servicebus-dotnet-demo.git
+
 cd azure-servicebus-dotnet-demo
 
 **2. Configure Settings:**
+
 Locate the appsettings.example.json file and create a copy named
-appsettings.json . Fill in your Azure credentials:
+appsettings.json.
+
+Fill in your Azure credentials:
 
 
 ``` json
 {
 "ServiceBus": {<br/>
-"ConnectionString": "Endpoint=sb://your-namespace.servicebus.windows.net/;SharedA
+"ConnectionString": "Endpoint=sb://your-namespace.servicebus.windows.net/;SharedA"
 "QueueName": "orders-queue"
 }
 }
